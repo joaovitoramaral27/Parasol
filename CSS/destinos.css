@@ -5,14 +5,6 @@ body {
     color: white;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
 .headr{
     background-color:rgb(38, 55, 66);
     padding-left: 20px;
@@ -48,6 +40,7 @@ body {
     border-radius: 50px;
     background: linear-gradient(to bottom, rgba(38, 55, 66), rgb(56, 48, 85));
     width: 800px;
+    justify-self: center;
 }
 
 .navbar a {
@@ -58,53 +51,53 @@ body {
     text-decoration: none;
 }
 
-.telacontato {
-    margin-top: 50px;
-    background-color: rgb(38, 55, 66);
-    width: auto;
-    height: auto;
+main{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px; 
-    padding: 10px 20px;
-    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+}
+
+main img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 55, 66);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
     background: linear-gradient(to bottom, rgba(38, 55, 66), rgb(56, 48, 85));
 }
 
-.texto{
-    margin-top: 10px;
+main h1{
     background-color: rgb(38, 55, 66);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 0;
-    border-radius: 50px;
     background: linear-gradient(to bottom, rgba(38, 55, 66), rgb(56, 48, 85));
-    width: 600px;
-    height: 250px;
+    text-align: center;
+    border-radius: 15px;
 }
 
-.formulario{
-    margin-top: 10px;
+main p{
     background-color: rgb(38, 55, 66);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
     background: linear-gradient(to bottom, rgba(38, 55, 66), rgb(56, 48, 85));
-    width: 500px;
-    height: auto;
-}
-.formulario h1{
-    padding-left: 20px;
-}
-.formulario form {
+    text-align: center;
+    border-radius: 15px;
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
+    align-items: center;
 }

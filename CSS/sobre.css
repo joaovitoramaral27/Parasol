@@ -10,14 +10,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1485px;
+    width: 100%;
 }
 
 .headr{
     background-color:rgb(38, 55, 66);
     padding-left: 20px;
     padding-right: 20px;
-    width: 1440px;
+    width: 100%;
     height: 150px;
     display: flex;
     justify-content: flex-start;
