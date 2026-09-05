@@ -1,20 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parasol Viagens - Dashboard</title>
-    <link rel="icon" sizes="48x48" href="../Img/Logo.png">
+    <title>Parasol Viagens | Dashboard</title>
+    <link rel="icon" sizes="64x64" href="../Img/Logo.png">
     <link rel="stylesheet" href="../CSS/dashboard.css">
 </head>
 <body>
-    <script src="../JS/dashboard.js"></script>
-     <header>
-        <div class="headr">
-            <h1>PARASOL  </h1><h2>  Viagens</h2>
-            <img src="../Img/Logo.png" alt="Logo da Parasol Viagens">
+    <header>
+        <div class="container">
+            <div class="headr">
+                <h1>PARASOL</h1>
+                <h2>Viagens</h2>
+
+                <img src="../Img/Logo.png" alt="Logo da Parasol Viagens">
+            </div>
+            <div class="navbar">
+                <nav>
+                    <a href="../Pages/sobre.html">Sobre Nós</a>
+                    <a href="../Pages/contato.html">Contato</a>
+                    <a href="../Pages/destinos.html">Destinos</a>
+                    <a href="../Pages/reserva.html">Reservas</a>
+                </nav>
+            </div>
         </div>
     </header>
-    
+    <main class="dashboard">
+        <div class="dashboard-title">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Visão geral da Parasol Viagens</p>
+            </div>
+            <button class="new-reservation">
+                + Nova Reserva
+            </button>
+        </div>
+        <section class="cards">
+            <div class="card">
+                <div>
+                    <p>Reservas</p>
+                    <h2>128</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>Clientes</p>
+                    <h2>342</h2>
+                    <span class="positive">↑ 8% este mês</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>Destinos</p>
+                    <h2>12</h2>
+                    <span>Destinos disponíveis</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <p>Faturamento</p>
+                    <h2>R$ 24.580</h2>
+                    <span class="positive">↑ 15% este mês</span>
+                </div>
+            </div>
+        </section>
+        <section class="dashboard-content">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Próximas Viagens</h2>
+                    <a href="../Pages/destinos.html">Ver todas</a>
+                </div>
+                <div class="trip">
+                    <div class="trip-date">
+                        <strong>15</strong>
+                        <span>SET</span>
+                    </div>
+                    <div class="trip-info">
+                        <h3>Cabo Frio</h3>
+                        <p>15/09/2026 - 07:00</p>
+                    </div>
+                    <div class="trip-status">
+                        <span>32 passageiros</span>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="trip-date">
+                        <strong>22</strong>
+                        <span>SET</span>
+                    </div>
+                    <div class="trip-info">
+                        <h3>Cabo Frio</h3>
+                        <p>22/09/2026 - 07:00</p>
+                    </div>
+                    <div class="trip-status">
+                        <span>27 passageiros</span>
+                    </div>
+                </div>
+                <div class="trip">
+                    <div class="trip-date">
+                        <strong>29</strong>
+                        <span>SET</span>
+                    </div>
+                    <div class="trip-info">
+                        <h3>Cabo Frio</h3>
+                        <p>29/09/2026 - 07:00</p>
+                    </div>
+                    <div class="trip-status">
+                        <span>35 passageiros</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header">
+                    <h2>Reservas Recentes</h2>
+                    <a href="../Pages/reserva.html">Ver todas</a>
+                </div>
+                <div class="reservation">
+                    <div class="avatar">JV</div>
+                    <div class="reservation-info">
+                        <h3>João Vitor</h3>
+                        <p>Cabo Frio - 15/09</p>
+                    </div>
+                </div>
+                <div class="reservation">
+                    <div class="avatar">MS</div>
+                    <div class="reservation-info">
+                        <h3>Maria Silva</h3>
+                        <p>Cabo Frio - 15/09</p>
+                    </div>
+                </div>
+                <div class="reservation">
+                    <div class="avatar">AC</div>
+                    <div class="reservation-info">
+                        <h3>Arthur Costa</h3>
+                        <p>Cabo Frio - 22/09</p>
+                    </div>
+                </div>
+                <div class="reservation">
+                    <div class="avatar">LM</div>
+                    <div class="reservation-info">
+                        <h3>Lucas Martins</h3>
+                        <p>Cabo Frio - 22/09</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-panel">
+            <div class="panel-header">
+                <h2>Status das Reservas</h2>
+            </div>
+            <div class="status-container">
+                <div class="status-item">
+                    <div>
+                        Confirmadas
+                    </div>
+                    <strong>94</strong>
+                </div>
+                <div class="status-item">
+                    <div>
+                        Pendentes
+                    </div>
+                    <strong>21</strong>
+                </div>
+                <div class="status-item">
+                    <div>
+                        Canceladas
+                    </div>
+                    <strong>13</strong>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
